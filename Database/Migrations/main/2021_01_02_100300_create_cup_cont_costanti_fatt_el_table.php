@@ -14,7 +14,7 @@ class CreateCupContCostantiFattElTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('costanti_fatturazione', function(Blueprint $table)
+		Schema::create('cup_cont_costanti_fatt_el', function(Blueprint $table)
 		{
             			$table->increments('id');
 			$table->string('codice');
@@ -37,7 +37,7 @@ class CreateCupContCostantiFattElTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('costanti_fatturazione');
+		Schema::drop('cup_cont_costanti_fatt_el');
 	}
 
 }

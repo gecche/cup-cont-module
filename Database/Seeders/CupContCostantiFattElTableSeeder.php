@@ -240,12 +240,12 @@ class CupContCostantiFattElTableSeeder extends Seeder
 
         $tipiRitenuta = [
 
-            ['codice' => "RT01", "Ritenuta di acconto persone fisiche"],
-            ['codice' => "RT02", "Ritenuta di acconto persone giuridiche"],
-            ['codice' => "RT03", "Contributo INPS",'versione' => '1.2.1'],
-            ['codice' => "RT04", "Contributo ENASARCO",'versione' => '1.2.1'],
-            ['codice' => "RT05", "Contributo ENPAM",'versione' => '1.2.1'],
-            ['codice' => "RT06", "Altro contributo previdenziale",'versione' => '1.2.1'],
+            ['codice' => "RT01", "descrizione" => "Ritenuta di acconto persone fisiche"],
+            ['codice' => "RT02", "descrizione" => "Ritenuta di acconto persone giuridiche"],
+            ['codice' => "RT03", "descrizione" => "Contributo INPS",'versione' => '1.2.1'],
+            ['codice' => "RT04", "descrizione" => "Contributo ENASARCO",'versione' => '1.2.1'],
+            ['codice' => "RT05", "descrizione" => "Contributo ENPAM",'versione' => '1.2.1'],
+            ['codice' => "RT06", "descrizione" => "Altro contributo previdenziale",'versione' => '1.2.1'],
 
         ];
 

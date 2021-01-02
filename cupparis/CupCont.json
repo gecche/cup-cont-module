@@ -4,7 +4,9 @@
             "cup_cont_costante_fatt_el",
             "cup_cont_tipologia_documento",
             "cup_cont_iva",
-            "cup_cont_forma_pagamento"
+            "cup_cont_forma_pagamento",
+            "cup_cont_tipologia_prestazione",
+            "cup_cont_progressivo"
         ]
     },
     "modelconfs": {
@@ -12,7 +14,9 @@
             "CupContCostanteFattEl.js",
             "CupContTipologiaDocumento.js",
             "CupContIva.js",
-            "CupContFormaPagamento.js"
+            "CupContFormaPagamento.js",
+            "CupContTipologiaPrestazione.js",
+            "CupContProgressivo.js"
         ]
     },
     "permissions": {
@@ -20,7 +24,9 @@
             "cup_cont_costante_fatt_el",
             "cup_cont_tipologia_documento",
             "cup_cont_iva",
-            "cup_cont_forma_pagamento"
+            "cup_cont_forma_pagamento",
+            "cup_cont_tipologia_prestazione",
+            "cup_cont_progressivo"
         ],
         "other_permissions": {
             "web": [
@@ -32,14 +38,18 @@
             "\\App\\Models\\CupContCostanteFattEl" :  "\\App\\Policies\\CupContCostanteFattElPolicy",
             "\\App\\Models\\CupContTipologiaDocumento" : "\\App\\Policies\\CupContTipologiaDocumentoPolicy",
             "\\App\\Models\\CupContIva" : "\\App\\Policies\\CupContIvaPolicy",
-            "\\App\\Models\\CupContFormaPagamento" : "\\App\\Policies\\CupContFormaPagamentoPolicy"
+            "\\App\\Models\\CupContFormaPagamento" : "\\App\\Policies\\CupContFormaPagamentoPolicy",
+            "\\App\\Models\\CupContTipologiaPrestazione" :  "\\App\\Policies\\CupContTipologiaPrestazionePolicy",
+            "\\App\\Models\\CupContProgressivo" :  "\\App\\Policies\\CupContProgressivoPolicy"
         }
     },
     "models": [
         "CupContCostanteFattEl",
         "CupContTipologiaDocumento",
         "CupContIva",
-        "CupContFormaPagamento"
+        "CupContFormaPagamento",
+        "CupContTipologiaPrestazione",
+        "CupContProgressivo"
     ],
     "datafile-models": [
     ],
@@ -50,6 +60,8 @@
         "admin/ModelConfs/CupContTipologiaDocumento.js",
         "admin/ModelConfs/CupContIva.js",
         "admin/ModelConfs/CupContFormaPagamento.js",
+        "admin/ModelConfs/CupContTipologiaPrestazione.js",
+        "admin/ModelConfs/CupContProgressivo.js",
         "admin/pages/tabcontmisc.html"
     ],
     "components": [
