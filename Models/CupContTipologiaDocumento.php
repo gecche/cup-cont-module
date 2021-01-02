@@ -13,7 +13,7 @@ class CupContTipologiaDocumento extends Breeze
 
 //    use ModelWithUploadsTrait;
 
-    protected $table = 'cup_cont_tipologia_documento';
+    protected $table = 'cup_cont_tipologie_documenti';
 
     //protected $fillable = [];
 

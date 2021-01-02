@@ -5,7 +5,7 @@ use Gecche\Breeze\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 
-class CreateCupContTipologiaDocumentoTable extends Migration {
+class CreateCupContTipologieDocumentiTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -14,7 +14,7 @@ class CreateCupContTipologiaDocumentoTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('cup_cont_tipologia_documento', function(Blueprint $table)
+		Schema::create('cup_cont_tipologie_documenti', function(Blueprint $table)
 		{
             			$table->increments('id');
 			$table->string('codice',8)->unique();
@@ -34,7 +34,7 @@ class CreateCupContTipologiaDocumentoTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('cup_cont_tipologia_documento');
+		Schema::drop('cup_cont_tipologie_documenti');
 	}
 
 }
