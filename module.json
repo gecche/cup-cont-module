@@ -1,0 +1,13 @@
+{
+    "name": "CupCont",
+    "alias": "cupcont",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\CupCont\\Providers\\CupContServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

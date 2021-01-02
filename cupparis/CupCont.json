@@ -1,0 +1,55 @@
+{
+    "foorm": {
+        "entities": [
+            "cup_cont_tipologia_documento",
+            "cup_cont_iva",
+            "cup_cont_forma_pagamento",
+        ]
+    },
+    "modelconfs": {
+        "files": [
+            "CupContTipologiaDocumento.js",
+            "CupContIva.js",
+            "CupContFormaPagamento.js"
+        ]
+    },
+    "permissions": {
+        "models": [
+            "cup_cont_tipologia_documento",
+            "cup_cont_iva",
+            "cup_cont_forma_pagamento"
+        ],
+        "other_permissions": {
+            "web": [
+            ]
+        }
+    },
+    "policies": {
+        "models": {
+            "\\App\\Models\\CupContTipologiaDocumento" : "\\App\\Policies\\CupContTipologiaDocumentoPolicy",
+            "\\App\\Models\\CupContIva" : "\\App\\Policies\\CupContIvaPolicy",
+            "\\App\\Models\\CupContFormaPagamento" : "\\App\\Policies\\CupContFormaPagamentoPolicy"
+        }
+    },
+    "models": [
+        "CupContTipologiaDocumento",
+        "CupContIva",
+        "CupContFormaPagamento"
+    ],
+    "datafile-models": [
+    ],
+    "datafile-providers": [
+    ],
+    "public": [
+        "admin/ModelConfs/CupContTipologiaDocumento.js",
+        "admin/ModelConfs/CupContIva.js",
+        "admin/ModelConfs/CupContFormaPagamento.js",
+        "admin/pages/tabcontmisc.html"
+    ],
+    "components": [
+
+    ],
+    "config": [
+        "cupcont"
+    ]
+}
