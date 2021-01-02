@@ -5,7 +5,7 @@ use Gecche\Breeze\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 
-class CreateCostantiFatturazioneTable extends Migration {
+class CreateCupContCostantiFattElTable extends Migration {
 
 	/**
 	 * Run the migrations.
