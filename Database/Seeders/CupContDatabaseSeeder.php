@@ -16,6 +16,9 @@ class CupContDatabaseSeeder extends Seeder
     {
         Model::unguard();
 
-        // $this->call("OthersTableSeeder");
+        $this->call(CupContCostantiFattElTableSeeder::class);
+        $this->call(CupContTipologieDocumentiTableSeeder::class);
+        $this->call(CupContFormePagamentoTableSeeder::class);
+        $this->call(CupContIvaTableSeeder::class);
     }
 }

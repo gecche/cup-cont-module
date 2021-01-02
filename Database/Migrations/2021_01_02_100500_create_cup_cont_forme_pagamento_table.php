@@ -21,7 +21,7 @@ class CreateCupContFormePagamentoTable extends Migration {
 			$table->string('nome');
             $table->boolean('immediato')->default(1);
 			$table->string('modalita_fatt_el',4)->nullable();
-			$table->text('app_info')->nullable();
+			$table->longText('app_info')->nullable();
 			$table->nullableTimestamps();
 			$table->nullableOwnerships();
 

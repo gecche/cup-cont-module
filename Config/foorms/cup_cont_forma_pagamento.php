@@ -54,6 +54,9 @@ return [
             "nome" => [
 
             ],
+            'immediato' => [
+
+            ],
             "modalita_fatt_el" => [
 
             ],
@@ -69,6 +72,9 @@ return [
             ],
             "nome" => [
                 "operator" => "like"
+            ],
+            'immediato' => [
+
             ],
             "modalita_fatt_el" => [
                 "operator" => "like"
@@ -112,14 +118,20 @@ return [
     ],
     'edit' => [
         'fields' => [
+            'id' => [
+
+            ],
             "codice" => [
 
             ],
             "nome" => [
 
             ],
+            'immediato' => [
+                'options' => 'boolean',
+            ],
             "modalita_fatt_el" => [
-
+                'options' => 'method',
             ],
             "app_info" => [
 

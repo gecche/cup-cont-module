@@ -46,44 +46,12 @@
 
 return [
 
-    'view' => [
-        'fields' => [
-            "codice" => [
-
-            ],
-            "nome" => [
-
-            ],
-            "macrotipo" => [
-
-            ],
-            "tipo_fatt_el" => [
-
-            ]
-        ],
-    ],
     'search' => [
-        'fields' => [
-            "codice" => [
-                "operator" => "like"
-            ],
-            "nome" => [
-                "operator" => "like"
-            ],
-            "macrotipo" => [
-                "operator" => "like",
-                "options" => "dboptions"
-            ],
-            "tipo_fatt_el" => [
-                "operator" => "like"
-            ]
+        "tipo" => [
+
         ],
     ],
     'list' => [
-
-        'dependencies' => [
-            'search' => 'search',
-        ],
 
         'pagination' => [
             'per_page' => 20,
@@ -91,16 +59,25 @@ return [
         ],
 
         'fields' => [
+            "id" => [
+
+            ],
             "codice" => [
 
             ],
-            "nome" => [
+            "descrizione" => [
 
             ],
-            "macrotipo" => [
+            "tipo" => [
 
             ],
-            "tipo_fatt_el" => [
+            "note" => [
+
+            ],
+            "attivo" => [
+
+            ],
+            "versione" => [
 
             ]
         ],
@@ -113,20 +90,23 @@ return [
     ],
     'edit' => [
         'fields' => [
-            'id' => [
-
-            ],
             "codice" => [
 
             ],
-            "nome" => [
+            "descrizione" => [
 
             ],
-            "macrotipo" => [
-                'options' => 'dboptions',
+            "tipo" => [
+                'options' => 'dboptions'
             ],
-            "tipo_fatt_el" => [
-                'options' => 'method',
+            "note" => [
+
+            ],
+            "attivo" => [
+                'options' => 'boolean'
+            ],
+            "versione" => [
+                'options' => 'dboptions'
             ]
         ],
         'relations' => [
@@ -136,8 +116,5 @@ return [
 
         ],
     ],
-//    'insert' => [
-//
-//    ],
 
 ];

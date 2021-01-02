@@ -131,6 +131,9 @@ return [
     ],
     'edit' => [
         'fields' => [
+            'id' => [
+
+            ],
             "codice" => [
 
             ],
@@ -141,13 +144,13 @@ return [
 
             ],
             "esenzione" => [
-
+                'options' => 'boolean',
             ],
             "descrizione_esenzione" => [
 
             ],
             "natura_fatt_el" => [
-
+                'options' => 'method',
             ]
         ],
         'relations' => [

@@ -20,7 +20,7 @@ class CreateCupContIvaTable extends Migration {
 			$table->string('codice',8)->unique();
 			$table->string('nome');
 			$table->decimal('aliquota',5,2)->default(0.00);
-			$table->boolean('esenzione')->nullable();
+			$table->boolean('esenzione')->default(0);
 			$table->string('descrizione_esenzione')->nullable();
 			$table->string('natura_fatt_el',4)->nullable();
 			$table->nullableTimestamps();

@@ -1,13 +1,15 @@
 {
     "foorm": {
         "entities": [
+            "cup_cont_costante_fatt_el",
             "cup_cont_tipologia_documento",
             "cup_cont_iva",
-            "cup_cont_forma_pagamento",
+            "cup_cont_forma_pagamento"
         ]
     },
     "modelconfs": {
         "files": [
+            "CupContCostanteFattEl.js",
             "CupContTipologiaDocumento.js",
             "CupContIva.js",
             "CupContFormaPagamento.js"
@@ -15,6 +17,7 @@
     },
     "permissions": {
         "models": [
+            "cup_cont_costante_fatt_el",
             "cup_cont_tipologia_documento",
             "cup_cont_iva",
             "cup_cont_forma_pagamento"
@@ -26,12 +29,14 @@
     },
     "policies": {
         "models": {
+            "\\App\\Models\\CupContCostanteFattEl" :  "\\App\\Policies\\CupContCostanteFattElPolicy",
             "\\App\\Models\\CupContTipologiaDocumento" : "\\App\\Policies\\CupContTipologiaDocumentoPolicy",
             "\\App\\Models\\CupContIva" : "\\App\\Policies\\CupContIvaPolicy",
             "\\App\\Models\\CupContFormaPagamento" : "\\App\\Policies\\CupContFormaPagamentoPolicy"
         }
     },
     "models": [
+        "CupContCostanteFattEl",
         "CupContTipologiaDocumento",
         "CupContIva",
         "CupContFormaPagamento"
@@ -41,6 +46,7 @@
     "datafile-providers": [
     ],
     "public": [
+        "admin/ModelConfs/CupContCostanteFattEl.js",
         "admin/ModelConfs/CupContTipologiaDocumento.js",
         "admin/ModelConfs/CupContIva.js",
         "admin/ModelConfs/CupContFormaPagamento.js",
