@@ -6,7 +6,12 @@
             "cup_cont_iva",
             "cup_cont_forma_pagamento",
             "cup_cont_tipologia_prestazione",
-            "cup_cont_progressivo"
+            "cup_cont_progressivo",
+            "cup_cont_prestazione",
+            "cup_cont_documento",
+            "cup_cont_registrazione",
+            "cup_cont_documento_riga",
+            "cup_cont_documento_riga_iva"
         ]
     },
     "modelconfs": {
@@ -16,7 +21,12 @@
             "CupContIva.js",
             "CupContFormaPagamento.js",
             "CupContTipologiaPrestazione.js",
-            "CupContProgressivo.js"
+            "CupContProgressivo.js",
+            "CupContPrestazione.js",
+            "CupContDocumento.js",
+            "CupContRegistrazione.js",
+            "CupContDocumentoRiga.js",
+            "CupContDocumentoRigaIva.js"
         ]
     },
     "permissions": {
@@ -26,7 +36,12 @@
             "cup_cont_iva",
             "cup_cont_forma_pagamento",
             "cup_cont_tipologia_prestazione",
-            "cup_cont_progressivo"
+            "cup_cont_progressivo",
+            "cup_cont_prestazione",
+            "cup_cont_documento",
+            "cup_cont_registrazione",
+            "cup_cont_documento_riga",
+            "cup_cont_documento_riga_iva"
         ],
         "other_permissions": {
             "web": [
@@ -40,7 +55,10 @@
             "\\App\\Models\\CupContIva" : "\\App\\Policies\\CupContIvaPolicy",
             "\\App\\Models\\CupContFormaPagamento" : "\\App\\Policies\\CupContFormaPagamentoPolicy",
             "\\App\\Models\\CupContTipologiaPrestazione" :  "\\App\\Policies\\CupContTipologiaPrestazionePolicy",
-            "\\App\\Models\\CupContProgressivo" :  "\\App\\Policies\\CupContProgressivoPolicy"
+            "\\App\\Models\\CupContProgressivo" :  "\\App\\Policies\\CupContProgressivoPolicy",
+            "\\App\\Models\\CupContPrestazione" :  "\\App\\Policies\\CupContPrestazionePolicy",
+            "\\App\\Models\\CupContDocumento" :  "\\App\\Policies\\CupContDocumentoPolicy",
+            "\\App\\Models\\CupContRegistrazione" :  "\\App\\Policies\\CupContRegistrazionePolicy"
         }
     },
     "models": [
@@ -49,7 +67,12 @@
         "CupContIva",
         "CupContFormaPagamento",
         "CupContTipologiaPrestazione",
-        "CupContProgressivo"
+        "CupContProgressivo",
+        "CupContPrestazione",
+        "CupContDocumento",
+        "CupContRegistrazione",
+        "CupContDocumentoRiga",
+        "CupContDocumentoRigaIva"
     ],
     "datafile-models": [
     ],
@@ -62,6 +85,11 @@
         "admin/ModelConfs/CupContFormaPagamento.js",
         "admin/ModelConfs/CupContTipologiaPrestazione.js",
         "admin/ModelConfs/CupContProgressivo.js",
+        "admin/ModelConfs/CupContPrestazione.js",
+        "admin/ModelConfs/CupContDocumento.js",
+        "admin/ModelConfs/CupContRegistrazione.js",
+        "admin/ModelConfs/CupContDocumentoRiga.js",
+        "admin/ModelConfs/CupContDocumentoRigaIva.js",
         "admin/pages/tabcontmisc.html"
     ],
     "components": [
