@@ -1,6 +1,7 @@
 {
     "foorm": {
         "entities": [
+            "cup_cont_traits",
             "cup_cont_costante_fatt_el",
             "cup_cont_tipologia_documento",
             "cup_cont_iva",

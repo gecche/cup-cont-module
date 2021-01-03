@@ -1,5 +1,5 @@
 <?php
-namespace App\Foorm;
+namespace App\Foorm\CupContTraits;
 
 use App\Models\CupContCostanteFattEl;
 

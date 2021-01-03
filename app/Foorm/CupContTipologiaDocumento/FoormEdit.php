@@ -3,7 +3,7 @@
 namespace App\Foorm\CupContTipologiaDocumento;
 
 use Gecche\Cupparis\App\Foorm\Base\FoormEdit as BaseFoormEdit;
-use App\Foorm\CupContFattElTrait;
+use App\Foorm\CupContTraits\CupContFattElTrait;
 
 class FoormEdit extends BaseFoormEdit
 {
