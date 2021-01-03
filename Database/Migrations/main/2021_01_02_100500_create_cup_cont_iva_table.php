@@ -23,6 +23,7 @@ class CreateCupContIvaTable extends Migration {
 			$table->boolean('esenzione')->default(0);
 			$table->string('descrizione_esenzione')->nullable();
 			$table->string('natura_fatt_el',4)->nullable();
+			$table->boolean('attivo')->default(1);
 			$table->nullableTimestamps();
 			$table->nullableOwnerships();
 

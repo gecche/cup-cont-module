@@ -48,36 +48,35 @@ return [
 
     'view' => [
         'fields' => [
-    "codice" => [
+            "codice" => [
 
-    ],
-    "descrizione" => [
+            ],
+            "descrizione" => [
 
-    ],
-    "imponibile" => [
+            ],
+            "imponibile" => [
 
-    ],
-    "iva_id" => [
+            ],
+            "iva_id" => [
 
-    ]
-],
+            ]
+        ],
     ],
     'search' => [
         'fields' => [
-    "codice" => [
-        "operator" => "like"
-    ],
-    "descrizione" => [
-        "operator" => "like"
-    ],
-    "imponibile" => [
-
-    ],
-    "iva_id" => [
-        "operator" => "like",
-        "options" => "relation:cup_cont_iva"
-    ]
-],
+            "codice" => [
+                "operator" => "like"
+            ],
+            "descrizione" => [
+                "operator" => "like"
+            ],
+            "attivo" => [
+                "options" => "boolean"
+            ],
+            "iva_id" => [
+                "options" => "relation:iva"
+            ],
+        ],
     ],
     'list' => [
 
@@ -87,59 +86,71 @@ return [
 
         'pagination' => [
             'per_page' => 20,
-            'pagination_steps' => [10,20,50],
+            'pagination_steps' => [10, 20, 50],
         ],
 
         'fields' => [
-    "codice" => [
+            "codice" => [
 
-    ],
-    "descrizione" => [
+            ],
+            "descrizione" => [
 
-    ],
-    "imponibile" => [
+            ],
+            "imponibile" => [
 
-    ],
-    "iva_id" => [
+            ],
+            "iva_id" => [
 
-    ]
-],
+            ],
+            "imponibile_affiliazione" => [
+
+            ],
+            "attivo" => [
+
+            ],
+        ],
         'relations' => [
-    "iva" => [
-        "fields" => [
+            "iva" => [
+                "fields" => [
 
-        ]
-    ]
-],
+                ]
+            ]
+        ],
         'params' => [
 
         ],
     ],
     'edit' => [
         'fields' => [
-    "codice" => [
+            "codice" => [
 
-    ],
-    "descrizione" => [
+            ],
+            "descrizione" => [
 
-    ],
-    "imponibile" => [
+            ],
+            "imponibile" => [
 
-    ],
-    "iva_id" => [
-
-    ]
-],
-        'relations' => [
-    "iva" => [
-        "fields" => [
-
+            ],
+            "iva_id" => [
+                "options" => "relation:iva",
+            ],
+            "imponibile_affiliazione" => [
+                "options" => "boolean",
+            ],
+            "attivo" => [
+                "options" => "boolean",
+            ],
         ],
-        "savetype" => [
+        'relations' => [
+            "iva" => [
+                "fields" => [
 
-        ]
-    ]
-],
+                ],
+                "savetype" => [
+
+                ]
+            ]
+        ],
         'params' => [
 
         ],

@@ -22,6 +22,8 @@ var ModelCupContTipologiaPrestazione = {
 			'descrizione',
 			'imponibile',
 			'iva',
+            'imponibile_affiliazione',
+            'attivo',
 
         ],
         fieldsConfig: {
@@ -47,6 +49,8 @@ var ModelCupContTipologiaPrestazione = {
 			'descrizione',
 			'imponibile',
 			'iva_id',
+            'imponibile_affiliazione',
+            'attivo',
 
         ],
         fieldsConfig: {
@@ -65,6 +69,16 @@ var ModelCupContTipologiaPrestazione = {
                 //domainValues : [],
                 //domainValuesOrder : [],
 			},
+            'imponibile_affiliazione' : {
+                type : "w-select",
+                //domainValues : [],
+                //domainValuesOrder : [],
+            },
+            'attivo' : {
+                type : "w-select",
+                //domainValues : [],
+                //domainValuesOrder : [],
+            },
 
         }
 

@@ -22,6 +22,8 @@ class CreateCupContTipologiePrestazioniTable extends Migration {
 			$table->decimal('imponibile',7,2)->nullable();
 			$table->integer('iva_id')->unsigned()->nullable()->index();
 			$table->foreign('iva_id')->references('id')->on('cup_cont_iva')->onDelete('restrict')->onUpdate('cascade');
+			$table->boolean('imponibile_affiliazione')->default(0);
+			$table->boolean('attivo')->default(1);
 			$table->nullableTimestamps();
 			$table->nullableOwnerships();
 
