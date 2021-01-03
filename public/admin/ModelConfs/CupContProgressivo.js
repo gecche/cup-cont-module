@@ -106,7 +106,7 @@ var ModelCupContProgressivo = {
 
     },
     edit: {
-        modelName : 'cup_cont_progressivo'
+        modelName : 'cup_cont_progressivo',
         actions : ['action-save','action-back'],
         fields: [
 			'tipo',

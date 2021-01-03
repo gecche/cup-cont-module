@@ -1,7 +1,7 @@
 
 var ModelCupContDocumentoRigaIva = {
     search: {
-        modelName : 'cup_cont_documento_riga_iva'
+        modelName : 'cup_cont_documento_riga_iva',
         fields: [
 			'documento_id',
 			'numero_righe',
@@ -13,23 +13,23 @@ var ModelCupContDocumentoRigaIva = {
 
         ],
         fieldsConfig: {
-			'documento_id' : { 
+			'documento_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'numero_righe' : { 
+			},
+			'numero_righe' : {
                 type : "w-input",
                 inputType: "number",
-			}, 
-			'iva_id' : { 
+			},
+			'iva_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'natura_fatt_el' : { 
+			},
+			'natura_fatt_el' : {
                 type : "w-input",
-			}, 
+			},
 
         },
         // groups: {
@@ -47,7 +47,7 @@ var ModelCupContDocumentoRigaIva = {
 
     },
     list: {
-        modelName : 'cup_cont_documento_riga_iva'
+        modelName : 'cup_cont_documento_riga_iva',
         actions : [
             'action-insert',
             'action-edit',
@@ -67,29 +67,29 @@ var ModelCupContDocumentoRigaIva = {
 
         ],
         fieldsConfig: {
-			'numero_righe' : { 
+			'numero_righe' : {
                 type : "w-text",
-			}, 
-			'imponibile' : { 
+			},
+			'imponibile' : {
                 type : "w-text",
-			}, 
-			'natura_fatt_el' : { 
+			},
+			'natura_fatt_el' : {
                 type : "w-text",
-			}, 
-			'importo_iva' : { 
+			},
+			'importo_iva' : {
                 type : "w-text",
-			}, 
-			'importo_totale' : { 
+			},
+			'importo_totale' : {
                 type : "w-text",
-			}, 
-			'documento' : { 
+			},
+			'documento' : {
                 type : "w-belongsto",
                 fields : [],
-			}, 
-			'iva' : { 
+			},
+			'iva' : {
                 type : "w-belongsto",
                 fields : [],
-			}, 
+			},
 
         },
         orderFields : {
@@ -103,7 +103,7 @@ var ModelCupContDocumentoRigaIva = {
 
     },
     edit: {
-        modelName : 'cup_cont_documento_riga_iva'
+        modelName : 'cup_cont_documento_riga_iva',
         actions : ['action-save','action-back'],
         fields: [
 			'documento_id',
@@ -118,44 +118,44 @@ var ModelCupContDocumentoRigaIva = {
 
         ],
         fieldsConfig: {
-			'documento_id' : { 
+			'documento_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'numero_righe' : { 
+			},
+			'numero_righe' : {
                 type : "w-input",
                 inputType: "number",
-			}, 
-			'imponibile' : { 
+			},
+			'imponibile' : {
                 type : "decimal",
                 digits : 2,
                 symbol : null,
                 symbol_position : "left",
                 htmlAttributes: {},
-			}, 
-			'iva_id' : { 
+			},
+			'iva_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'natura_fatt_el' : { 
+			},
+			'natura_fatt_el' : {
                 type : "w-input",
-			}, 
-			'importo_iva' : { 
+			},
+			'importo_iva' : {
                 type : "decimal",
                 digits : 2,
                 symbol : null,
                 symbol_position : "left",
                 htmlAttributes: {},
-			}, 
-			'importo_totale' : { 
+			},
+			'importo_totale' : {
                 type : "decimal",
                 digits : 2,
                 symbol : null,
                 symbol_position : "left",
                 htmlAttributes: {},
-			}, 
+			},
 
         }
 

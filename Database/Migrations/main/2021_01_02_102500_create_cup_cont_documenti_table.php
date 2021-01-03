@@ -35,7 +35,10 @@ class CreateCupContDocumentiTable extends Migration {
 			$table->string('modalita_fatt_el',4)->nullable();
 			$table->string('iban',27)->nullable();
 			$table->decimal('imponibile',8,2)->nullable();
+            $table->decimal('contributo_cassa',8,2)->nullable();
 			$table->decimal('importo_iva',8,2)->nullable();
+            $table->decimal('ritenuta_acconto',8,2)->nullable();
+            $table->decimal('marca',8,2)->nullable();
 			$table->decimal('importo_totale',8,2)->nullable();
 			$table->decimal('prog_pagato',8,2)->nullable();
 			$table->boolean('chiuso')->nullable();

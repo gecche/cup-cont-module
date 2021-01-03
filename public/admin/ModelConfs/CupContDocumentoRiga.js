@@ -1,7 +1,7 @@
 
 var ModelCupContDocumentoRiga = {
     search: {
-        modelName : 'cup_cont_documento_riga'
+        modelName : 'cup_cont_documento_riga',
         fields: [
 			'documento_id',
 			'progressivo',
@@ -14,28 +14,28 @@ var ModelCupContDocumentoRiga = {
 
         ],
         fieldsConfig: {
-			'documento_id' : { 
+			'documento_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'progressivo' : { 
+			},
+			'progressivo' : {
                 type : "w-input",
                 inputType: "number",
-			}, 
-			'iva_id' : { 
+			},
+			'iva_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'natura_fatt_el' : { 
+			},
+			'natura_fatt_el' : {
                 type : "w-input",
-			}, 
-			'prestazione_id' : { 
+			},
+			'prestazione_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
+			},
 
         },
         // groups: {
@@ -53,7 +53,7 @@ var ModelCupContDocumentoRiga = {
 
     },
     list: {
-        modelName : 'cup_cont_documento_riga'
+        modelName : 'cup_cont_documento_riga',
         actions : [
             'action-insert',
             'action-edit',
@@ -75,33 +75,33 @@ var ModelCupContDocumentoRiga = {
 
         ],
         fieldsConfig: {
-			'progressivo' : { 
+			'progressivo' : {
                 type : "w-text",
-			}, 
-			'imponibile' : { 
+			},
+			'imponibile' : {
                 type : "w-text",
-			}, 
-			'natura_fatt_el' : { 
+			},
+			'natura_fatt_el' : {
                 type : "w-text",
-			}, 
-			'importo_iva' : { 
+			},
+			'importo_iva' : {
                 type : "w-text",
-			}, 
-			'importo_totale' : { 
+			},
+			'importo_totale' : {
                 type : "w-text",
-			}, 
-			'documento' : { 
+			},
+			'documento' : {
                 type : "w-belongsto",
                 fields : [],
-			}, 
-			'iva' : { 
+			},
+			'iva' : {
                 type : "w-belongsto",
                 fields : [],
-			}, 
-			'prestazione' : { 
+			},
+			'prestazione' : {
                 type : "w-belongsto",
                 fields : [],
-			}, 
+			},
 
         },
         orderFields : {
@@ -115,7 +115,7 @@ var ModelCupContDocumentoRiga = {
 
     },
     edit: {
-        modelName : 'cup_cont_documento_riga'
+        modelName : 'cup_cont_documento_riga',
         actions : ['action-save','action-back'],
         fields: [
 			'documento_id',
@@ -132,49 +132,49 @@ var ModelCupContDocumentoRiga = {
 
         ],
         fieldsConfig: {
-			'documento_id' : { 
+			'documento_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'progressivo' : { 
+			},
+			'progressivo' : {
                 type : "w-input",
                 inputType: "number",
-			}, 
-			'imponibile' : { 
+			},
+			'imponibile' : {
                 type : "decimal",
                 digits : 2,
                 symbol : null,
                 symbol_position : "left",
                 htmlAttributes: {},
-			}, 
-			'iva_id' : { 
+			},
+			'iva_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'natura_fatt_el' : { 
+			},
+			'natura_fatt_el' : {
                 type : "w-input",
-			}, 
-			'importo_iva' : { 
+			},
+			'importo_iva' : {
                 type : "decimal",
                 digits : 2,
                 symbol : null,
                 symbol_position : "left",
                 htmlAttributes: {},
-			}, 
-			'importo_totale' : { 
+			},
+			'importo_totale' : {
                 type : "decimal",
                 digits : 2,
                 symbol : null,
                 symbol_position : "left",
                 htmlAttributes: {},
-			}, 
-			'prestazione_id' : { 
+			},
+			'prestazione_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
+			},
 
         }
 

@@ -1,7 +1,7 @@
 
 var ModelCupContDocumento = {
     search: {
-        modelName : 'cup_cont_documento'
+        modelName : 'cup_cont_documento',
         fields: [
 			'organizzazione_id',
 			'sedeoperativa_id',
@@ -28,60 +28,60 @@ var ModelCupContDocumento = {
 
         ],
         fieldsConfig: {
-			'organizzazione_id' : { 
+			'organizzazione_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'sedeoperativa_id' : { 
+			},
+			'sedeoperativa_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'anno' : { 
+			},
+			'anno' : {
                 type : "w-input",
                 inputType: "number",
-			}, 
-			'numero' : { 
+			},
+			'numero' : {
                 type : "w-input",
-			}, 
-			'tipologia_id' : { 
+			},
+			'tipologia_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'tipo_fatt_el' : { 
+			},
+			'tipo_fatt_el' : {
                 type : "w-input",
-			}, 
-			'anagrafica_id' : { 
+			},
+			'anagrafica_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'formapagamento_id' : { 
+			},
+			'formapagamento_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'modalita_fatt_el' : { 
+			},
+			'modalita_fatt_el' : {
                 type : "w-input",
-			}, 
-			'iban' : { 
+			},
+			'iban' : {
                 type : "w-input",
-			}, 
-			'notacredito_id' : { 
+			},
+			'notacredito_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'chiuso' : { 
+			},
+			'chiuso' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'xml_progressivo_invio' : { 
+			},
+			'xml_progressivo_invio' : {
                 type : "w-input",
-			}, 
+			},
 
         },
         // groups: {
@@ -99,7 +99,7 @@ var ModelCupContDocumento = {
 
     },
     list: {
-        modelName : 'cup_cont_documento'
+        modelName : 'cup_cont_documento',
         actions : [
             'action-insert',
             'action-edit',
@@ -137,70 +137,70 @@ var ModelCupContDocumento = {
 
         ],
         fieldsConfig: {
-			'anno' : { 
+			'anno' : {
                 type : "w-text",
-			}, 
-			'numero' : { 
+			},
+			'numero' : {
                 type : "w-text",
-			}, 
-			'data' : { 
+			},
+			'data' : {
                 type : "w-text",
-			}, 
-			'tipo_fatt_el' : { 
+			},
+			'tipo_fatt_el' : {
                 type : "w-text",
-			}, 
-			'modalita_fatt_el' : { 
+			},
+			'modalita_fatt_el' : {
                 type : "w-text",
-			}, 
-			'iban' : { 
+			},
+			'iban' : {
                 type : "w-text",
-			}, 
-			'imponibile' : { 
+			},
+			'imponibile' : {
                 type : "w-text",
-			}, 
-			'importo_iva' : { 
+			},
+			'importo_iva' : {
                 type : "w-text",
-			}, 
-			'importo_totale' : { 
+			},
+			'importo_totale' : {
                 type : "w-text",
-			}, 
-			'prog_pagato' : { 
+			},
+			'prog_pagato' : {
                 type : "w-text",
-			}, 
-			'chiuso' : { 
+			},
+			'chiuso' : {
                 type : "w-swap2",
                 modelName : '{{$modelName}}',
                 //domainValues : {
                 //    1 : 'fa fa-circle text-danger',
                 //    0 : 'fa fa-circle text-success'
                 //}
-			}, 
-			'xml_at' : { 
+			},
+			'xml_at' : {
                 type : "w-text",
-			}, 
-			'xml_progressivo_invio' : { 
+			},
+			'xml_progressivo_invio' : {
                 type : "w-text",
-			}, 
-			'organizzazione' : { 
+			},
+			'organizzazione' : {
                 type : "w-belongsto",
                 fields : [],
-			}, 
-			'anagrafica' : { 
+			},
+			'anagrafica' : {
                 type : "w-belongsto",
                 fields : [],
-			}, 
-			'sede' : { 
+			},
+			'sede' : {
                 type : "w-belongsto",
                 fields : [],
-			}, 
-			'formapagamento' : { 
+			},
+			'formapagamento' : {
                 type : "w-belongsto",
                 fields : [],
-			}, 
-			'tipologia' : { 
+			},
+			'tipologia' : {
                 type : "w-belongsto",
                 fields : [],
-			}, 
+			},
 
         },
         orderFields : {
@@ -222,7 +222,7 @@ var ModelCupContDocumento = {
 
     },
     edit: {
-        modelName : 'cup_cont_documento'
+        modelName : 'cup_cont_documento',
         actions : ['action-save','action-back'],
         fields: [
 			'organizzazione_id',
@@ -255,24 +255,24 @@ var ModelCupContDocumento = {
 
         ],
         fieldsConfig: {
-			'organizzazione_id' : { 
+			'organizzazione_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'sedeoperativa_id' : { 
+			},
+			'sedeoperativa_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'anno' : { 
+			},
+			'anno' : {
                 type : "w-input",
                 inputType: "number",
-			}, 
-			'numero' : { 
+			},
+			'numero' : {
                 type : "w-input",
-			}, 
-			'data' : { 
+			},
+			'data' : {
                 type : "date_select",
                 format : "numeric",
                 active : [
@@ -283,82 +283,82 @@ var ModelCupContDocumento = {
                 startYear : null,
                 endYear : null,
                 htmlAttributes: {},
-			}, 
-			'tipologia_id' : { 
+			},
+			'tipologia_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'tipo_fatt_el' : { 
+			},
+			'tipo_fatt_el' : {
                 type : "w-input",
-			}, 
-			'anagrafica_id' : { 
+			},
+			'anagrafica_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'note' : { 
+			},
+			'note' : {
                 type : "texthtml",
                 htmlAttributes: {},
-			}, 
-			'formapagamento_id' : { 
+			},
+			'formapagamento_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'modalita_fatt_el' : { 
+			},
+			'modalita_fatt_el' : {
                 type : "w-input",
-			}, 
-			'iban' : { 
+			},
+			'iban' : {
                 type : "w-input",
-			}, 
-			'imponibile' : { 
+			},
+			'imponibile' : {
                 type : "decimal",
                 digits : 2,
                 symbol : null,
                 symbol_position : "left",
                 htmlAttributes: {},
-			}, 
-			'importo_iva' : { 
+			},
+			'importo_iva' : {
                 type : "decimal",
                 digits : 2,
                 symbol : null,
                 symbol_position : "left",
                 htmlAttributes: {},
-			}, 
-			'importo_totale' : { 
+			},
+			'importo_totale' : {
                 type : "decimal",
                 digits : 2,
                 symbol : null,
                 symbol_position : "left",
                 htmlAttributes: {},
-			}, 
-			'prog_pagato' : { 
+			},
+			'prog_pagato' : {
                 type : "decimal",
                 digits : 2,
                 symbol : null,
                 symbol_position : "left",
                 htmlAttributes: {},
-			}, 
-			'pagamenti' : { 
+			},
+			'pagamenti' : {
                 type : "texthtml",
                 htmlAttributes: {},
-			}, 
-			'notacredito_id' : { 
+			},
+			'notacredito_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'chiuso' : { 
+			},
+			'chiuso' : {
                 type : "w-radio",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'dati' : { 
+			},
+			'dati' : {
                 type : "texthtml",
                 htmlAttributes: {},
-			}, 
-			'xml_at' : { 
+			},
+			'xml_at' : {
                 type : "date_select",
                 format : "numeric",
                 active : [
@@ -369,10 +369,10 @@ var ModelCupContDocumento = {
                 startYear : null,
                 endYear : null,
                 htmlAttributes: {},
-			}, 
-			'xml_progressivo_invio' : { 
+			},
+			'xml_progressivo_invio' : {
                 type : "w-input",
-			}, 
+			},
 
         }
 

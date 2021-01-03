@@ -1,7 +1,7 @@
 
 var ModelCupContRegistrazione = {
     search: {
-        modelName : 'cup_cont_registrazione'
+        modelName : 'cup_cont_registrazione',
         fields: [
 			'organizzazione_id',
 			'anno',
@@ -15,37 +15,37 @@ var ModelCupContRegistrazione = {
 
         ],
         fieldsConfig: {
-			'organizzazione_id' : { 
+			'organizzazione_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'anno' : { 
+			},
+			'anno' : {
                 type : "w-input",
                 inputType: "number",
-			}, 
-			'progressivo' : { 
+			},
+			'progressivo' : {
                 type : "w-input",
                 inputType: "number",
-			}, 
-			'dare_avere' : { 
+			},
+			'dare_avere' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'macrotipo' : { 
+			},
+			'macrotipo' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'descrizione' : { 
+			},
+			'descrizione' : {
                 type : "w-input",
-			}, 
-			'sedeoperativa_id' : { 
+			},
+			'sedeoperativa_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
+			},
 
         },
         // groups: {
@@ -63,7 +63,7 @@ var ModelCupContRegistrazione = {
 
     },
     list: {
-        modelName : 'cup_cont_registrazione'
+        modelName : 'cup_cont_registrazione',
         actions : [
             'action-insert',
             'action-edit',
@@ -85,35 +85,35 @@ var ModelCupContRegistrazione = {
 
         ],
         fieldsConfig: {
-			'anno' : { 
+			'anno' : {
                 type : "w-text",
-			}, 
-			'progressivo' : { 
+			},
+			'progressivo' : {
                 type : "w-text",
-			}, 
-			'dare_avere' : { 
+			},
+			'dare_avere' : {
                 type : "w-text",
-			}, 
-			'data' : { 
+			},
+			'data' : {
                 type : "w-text",
-			}, 
-			'importo' : { 
+			},
+			'importo' : {
                 type : "w-text",
-			}, 
-			'macrotipo' : { 
+			},
+			'macrotipo' : {
                 type : "w-text",
-			}, 
-			'descrizione' : { 
+			},
+			'descrizione' : {
                 type : "w-text",
-			}, 
-			'organizzazione' : { 
+			},
+			'organizzazione' : {
                 type : "w-belongsto",
                 fields : [],
-			}, 
-			'sede' : { 
+			},
+			'sede' : {
                 type : "w-belongsto",
                 fields : [],
-			}, 
+			},
 
         },
         orderFields : {
@@ -129,7 +129,7 @@ var ModelCupContRegistrazione = {
 
     },
     edit: {
-        modelName : 'cup_cont_registrazione'
+        modelName : 'cup_cont_registrazione',
         actions : ['action-save','action-back'],
         fields: [
 			'organizzazione_id',
@@ -146,25 +146,25 @@ var ModelCupContRegistrazione = {
 
         ],
         fieldsConfig: {
-			'organizzazione_id' : { 
+			'organizzazione_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'anno' : { 
+			},
+			'anno' : {
                 type : "w-input",
                 inputType: "number",
-			}, 
-			'progressivo' : { 
+			},
+			'progressivo' : {
                 type : "w-input",
                 inputType: "number",
-			}, 
-			'dare_avere' : { 
+			},
+			'dare_avere' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'data' : { 
+			},
+			'data' : {
                 type : "date_select",
                 format : "numeric",
                 active : [
@@ -175,27 +175,27 @@ var ModelCupContRegistrazione = {
                 startYear : null,
                 endYear : null,
                 htmlAttributes: {},
-			}, 
-			'importo' : { 
+			},
+			'importo' : {
                 type : "decimal",
                 digits : 2,
                 symbol : null,
                 symbol_position : "left",
                 htmlAttributes: {},
-			}, 
-			'macrotipo' : { 
+			},
+			'macrotipo' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
-			'descrizione' : { 
+			},
+			'descrizione' : {
                 type : "w-input",
-			}, 
-			'sedeoperativa_id' : { 
+			},
+			'sedeoperativa_id' : {
                 type : "w-select",
                 //domainValues : [],
                 //domainValuesOrder : [],
-			}, 
+			},
 
         }
 
