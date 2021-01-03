@@ -40,7 +40,7 @@ class CupContTipologiaPrestazione extends Breeze
 
     public static $relationsData = [
 
-			'iva' => [self::BELONGS_TO, 'App\Models\CupContIva', 'table' => 'cup_cont_iva', 'foreignKey' => 'iva_id'],
+			'iva' => [self::BELONGS_TO, 'related' => \App\Models\CupContIva::class, 'table' => 'cup_cont_iva', 'foreignKey' => 'iva_id'],
 
 
 //        'belongsto' => array(self::BELONGS_TO, CupContTipologiaPrestazione::class, 'foreignKey' => '<FOREIGNKEYNAME>'),

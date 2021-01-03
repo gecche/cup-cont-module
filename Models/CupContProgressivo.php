@@ -40,9 +40,9 @@ class CupContProgressivo extends Breeze
 
     public static $relationsData = [
 
-			'organizzazione' => [self::BELONGS_TO, 'App\Models\CupAnagAnagrafica', 'table' => 'cup_anag_anagrafiche', 'foreignKey' => 'organizzazione_id'],
-			'sede' => [self::BELONGS_TO, 'App\Models\CupAnagSede', 'table' => 'cup_anag_sedi', 'foreignKey' => 'sede_id'],
-			'tipodocumento' => [self::BELONGS_TO, 'App\Models\CupContTipologiaDocumento', 'table' => 'cup_cont_tipologie_documenti', 'foreignKey' => 'tipodocumento_id'],
+			'organizzazione' => [self::BELONGS_TO, 'related' => \App\Models\CupAnagAnagrafica::class, 'table' => 'cup_anag_anagrafiche', 'foreignKey' => 'organizzazione_id'],
+			'sede' => [self::BELONGS_TO, 'related' => \App\Models\CupAnagSede::class, 'table' => 'cup_anag_sedi', 'foreignKey' => 'sede_id'],
+			'tipodocumento' => [self::BELONGS_TO, 'related' => \App\Models\CupContTipologiaDocumento::class, 'table' => 'cup_cont_tipologie_documenti', 'foreignKey' => 'tipodocumento_id'],
 
 
 //        'belongsto' => array(self::BELONGS_TO, CupContProgressivo::class, 'foreignKey' => '<FOREIGNKEYNAME>'),
