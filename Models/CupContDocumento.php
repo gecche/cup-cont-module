@@ -45,6 +45,8 @@ class CupContDocumento extends Breeze
 			'formapagamento' => [self::BELONGS_TO, 'related' => \App\Models\CupContFormaPagamento::class, 'table' => 'cup_cont_forme_pagamento', 'foreignKey' => 'formapagamento_id'],
 			'tipologia' => [self::BELONGS_TO, 'related' => \App\Models\CupContTipologiaDocumento::class, 'table' => 'cup_cont_tipologie_documenti', 'foreignKey' => 'tipologia_id'],
 
+            'righe' => [self::HAS_MANY, 'related' => \App\Models\CupContDocumentoRiga::class, 'foreignKey' => 'documento_id'],
+            'righeiva' => [self::HAS_MANY, 'related' => \App\Models\CupContDocumentoRigaIva::class, 'foreignKey' => 'documento_id'],
 
             'registrazioni' => [self::BELONGS_TO_MANY, 'related' => \App\Models\CupContRegistrazione::class,
                 'table' => 'cup_cont_registrazioni_documenti',
