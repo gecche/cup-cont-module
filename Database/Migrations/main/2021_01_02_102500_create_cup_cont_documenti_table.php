@@ -47,6 +47,7 @@ class CreateCupContDocumentiTable extends Migration {
 			$table->string('xml_progressivo_invio',5)->nullable();
 			$table->nullableTimestamps();
 			$table->nullableOwnerships();
+            $table->unique(['anno','sedeoperativa_id','tipologia_id','numero'],'cup_cont_docprog');
 
 		});
 	}

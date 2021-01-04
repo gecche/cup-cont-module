@@ -26,6 +26,7 @@ class CreateCupContProgressiviTable extends Migration {
 			$table->integer('tipodocumento_id')->unsigned()->nullable()->index();
 			$table->foreign('tipodocumento_id')->references('id')->on('cup_cont_tipologie_documenti')->onDelete('cascade')->onUpdate('cascade');
 			$table->string('ultimo_numero',8)->nullable();
+            $table->date('ultima_data')->nullable();
 			$table->string('ultimo_progressivo_invio')->nullable();
 			$table->nullableTimestamps();
 			$table->nullableOwnerships();

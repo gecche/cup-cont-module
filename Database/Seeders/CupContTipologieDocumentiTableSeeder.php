@@ -17,7 +17,16 @@ class CupContTipologieDocumentiTableSeeder extends Seeder
 
         $tipologieDocumenti = [
             ['codice' => 'FATT','nome' => 'Fattura', 'macrotipo' => 'Fattura', 'tipo_fatt_el' => 'TD01'],
-            ['codice' => 'RIC','nome' => 'Ricevuta', 'macrotipo' => 'Ricevuta', 'tipo_fatt_el' => null],
+            [   'codice' => 'RIC',
+                'nome' => 'Ricevuta',
+                'macrotipo' => 'Ricevuta', 'tipo_fatt_el' => null
+            ],
+            [   'codice' => 'RICSAN',
+                'nome' => 'Ricevuta sanitaria',
+                'macrotipo' => 'Ricevuta',
+                'metodo_calcolo' => 'ricevuta_sanitaria',
+                'tipo_fatt_el' => null
+            ],
 //            ['codice' => ,'nome' => , 'macrotipo' => , 'tipo_fatt_el' => ],
         ];
 

@@ -21,6 +21,7 @@ class CreateCupContTipologieDocumentiTable extends Migration {
 			$table->string('nome');
 			$table->enum('macrotipo',['Fattura','Ricevuta','Nota di credito','Quietanza','Altro']);
 			$table->string('tipo_fatt_el',4)->nullable();
+            $table->string('metodo_calcolo')->nullable();
             $table->boolean('attivo')->default(1);
 			$table->nullableTimestamps();
 			$table->nullableOwnerships();
