@@ -43,6 +43,7 @@ class CreateCupContPrestazioniTable extends Migration {
 			$table->boolean('chiuso')->nullable();
 			$table->nullableTimestamps();
 			$table->nullableOwnerships();
+            $table->unique(['anno','organizzazione_id','numero'],'cup_cont_presprog');
 
 		});
 	}
