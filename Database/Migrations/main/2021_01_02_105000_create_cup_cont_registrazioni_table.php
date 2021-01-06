@@ -20,7 +20,7 @@ class CreateCupContRegistrazioniTable extends Migration {
 			$table->integer('organizzazione_id')->unsigned()->index();
 			$table->foreign('organizzazione_id')->references('id')->on('cup_anag_anagrafiche')->onDelete('restrict')->onUpdate('cascade');
 			$table->integer('anno')->unsigned();
-			$table->integer('progressivo')->unsigned();
+			$table->integer('numero')->unsigned();
 			$table->enum('dare_avere',['D','A']);
 			$table->date('data');
 			$table->decimal('importo',8,2);
@@ -30,6 +30,7 @@ class CreateCupContRegistrazioniTable extends Migration {
 			$table->foreign('sedeoperativa_id')->references('id')->on('cup_anag_sedi')->onDelete('restrict')->onUpdate('cascade');
 			$table->nullableTimestamps();
 			$table->nullableOwnerships();
+            $table->unique(['anno','organizzazione_id','numero'],'cup_cont_regprog');
 
 		});
 	}

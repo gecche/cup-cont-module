@@ -20,6 +20,8 @@ class CreateCupContDocumentiRigheTable extends Migration {
 			$table->integer('documento_id')->unsigned()->index();
 			$table->foreign('documento_id')->references('id')->on('cup_cont_documenti')->onDelete('cascade')->onUpdate('cascade');
 			$table->integer('progressivo')->unsigned()->default(1);
+            $table->decimal('valore_unitario',8,2)->nullable();
+            $table->integer('quantita')->unsigned()->nullable();
 			$table->decimal('imponibile',8,2);
 			$table->integer('iva_id')->unsigned()->index();
 			$table->foreign('iva_id')->references('id')->on('cup_cont_iva')->onDelete('restrict')->onUpdate('cascade');
