@@ -17,7 +17,7 @@ class CreateCupContProgressiviTable extends Migration {
 		Schema::create('cup_cont_progressivi', function(Blueprint $table)
 		{
             			$table->increments('id');
-			$table->enum('tipo',['prestazioni','documenti','fatt_el']);
+			$table->enum('tipo',['prestazioni','documenti','registrazioni','fatt_el']);
 			$table->integer('organizzazione_id')->unsigned()->index();
 			$table->foreign('organizzazione_id')->references('id')->on('cup_anag_anagrafiche')->onDelete('cascade')->onUpdate('cascade');
 			$table->integer('sedeoperativa_id')->unsigned()->nullable()->index();
@@ -25,7 +25,8 @@ class CreateCupContProgressiviTable extends Migration {
 			$table->integer('anno')->unsigned()->nullable()->index();
 			$table->integer('tipodocumento_id')->unsigned()->nullable()->index();
 			$table->foreign('tipodocumento_id')->references('id')->on('cup_cont_tipologie_documenti')->onDelete('cascade')->onUpdate('cascade');
-			$table->string('ultimo_numero',8)->nullable();
+			$table->integer('ultimo_numero')->nullable();
+            $table->integer('ultimo_numero_ord')->nullable();
             $table->date('ultima_data')->nullable();
 			$table->string('ultimo_progressivo_invio')->nullable();
 			$table->nullableTimestamps();

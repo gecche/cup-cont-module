@@ -22,7 +22,9 @@ class CreateCupContDocumentiTable extends Migration {
 			$table->integer('sedeoperativa_id')->unsigned()->index();
 			$table->foreign('sedeoperativa_id')->references('id')->on('cup_anag_sedi')->onDelete('restrict')->onUpdate('cascade');
 			$table->integer('anno')->unsigned();
-			$table->string('numero',8);
+			$table->integer('numero');
+            $table->enum('lettera',['A','B','C','D','E','F'])->nullable();
+            $table->integer('numero_ord');
 			$table->date('data');
 			$table->integer('tipologia_id')->unsigned()->index();
 			$table->foreign('tipologia_id')->references('id')->on('cup_cont_tipologie_documenti')->onDelete('restrict')->onUpdate('cascade');
@@ -47,7 +49,7 @@ class CreateCupContDocumentiTable extends Migration {
 			$table->string('xml_progressivo_invio',5)->nullable();
 			$table->nullableTimestamps();
 			$table->nullableOwnerships();
-            $table->unique(['anno','sedeoperativa_id','tipologia_id','numero'],'cup_cont_docprog');
+            $table->unique(['anno','sedeoperativa_id','tipologia_id','numero_ord'],'cup_cont_docprog');
 
 		});
 	}
