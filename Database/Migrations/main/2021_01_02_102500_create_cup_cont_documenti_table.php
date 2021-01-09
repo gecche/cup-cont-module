@@ -47,6 +47,7 @@ class CreateCupContDocumentiTable extends Migration {
 			$table->text('dati')->nullable();
 			$table->dateTime('xml_at')->nullable();
 			$table->string('xml_progressivo_invio',5)->nullable();
+            $table->boolean('contabilizzato')->default(0);
 			$table->nullableTimestamps();
 			$table->nullableOwnerships();
             $table->unique(['anno','sedeoperativa_id','tipologia_id','numero_ord'],'cup_cont_docprog');
