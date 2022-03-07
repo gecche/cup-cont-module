@@ -1,11 +1,10 @@
 <?php
 
-use Gecche\Breeze\Facades\Schema;
-use Gecche\Breeze\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
-class CreateCupContRegistrazioniDocumentiTable extends Migration
-{
+return new class extends Migration {
 
     /**
      * Run the migrations.
@@ -16,12 +15,12 @@ class CreateCupContRegistrazioniDocumentiTable extends Migration
     {
         Schema::create('cup_cont_registrazioni_documenti', function (Blueprint $table) {
 
-            $table->increments('id');// int(11) NOT NULL,
+            $table->id();// int(11) NOT NULL,
 
-            $table->integer('registrazione_id')->unsigned();// varchar(4) DEFAULT NULL,
+            $table->unsignedBigInteger('registrazione_id');// varchar(4) DEFAULT NULL,
             $table->foreign('registrazione_id')->references('id')->on('cup_cont_registrazioni')
                 ->onDelete('cascade')->onUpdate('cascade');
-            $table->integer('documento_id')->unsigned();// varchar(4) DEFAULT NULL,
+            $table->unsignedBigInteger('documento_id');// varchar(4) DEFAULT NULL,
             $table->foreign('documento_id')->references('id')->on('cup_cont_documenti')
                 ->onDelete('cascade')->onUpdate('cascade');
 
@@ -38,4 +37,4 @@ class CreateCupContRegistrazioniDocumentiTable extends Migration
         Schema::drop('cup_cont_registrazioni_documenti');
     }
 
-}
+};

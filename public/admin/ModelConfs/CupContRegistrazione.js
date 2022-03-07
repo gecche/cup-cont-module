@@ -1,5 +1,6 @@
 
 var ModelCupContRegistrazione = {
+	modelName : 'cup_cont_registrazione',
     search: {
         modelName : 'cup_cont_registrazione',
         fields: [

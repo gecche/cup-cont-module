@@ -1,4 +1,5 @@
 var ModelCupContIva = {
+    modelName: 'cup_cont_iva',
     search: {
         modelName: 'cup_cont_iva',
         //langContext : 'user',

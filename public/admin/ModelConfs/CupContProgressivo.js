@@ -1,5 +1,6 @@
 
 var ModelCupContProgressivo = {
+    modelName : 'cup_cont_progressivo',
     search: {
         modelName : 'cup_cont_progressivo',
         fields: [

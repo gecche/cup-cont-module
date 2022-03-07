@@ -1,4 +1,5 @@
 var ModelCupContTipologiaDocumento = {
+    modelName: 'cup_cont_tipologia_documento',
     search: {
         modelName: 'cup_cont_tipologia_documento',
         //langContext : 'user',

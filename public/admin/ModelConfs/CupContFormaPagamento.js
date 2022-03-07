@@ -1,4 +1,5 @@
 var ModelCupContFormaPagamento = {
+    modelName: 'cup_cont_forma_pagamento',
     search: {
         modelName: 'cup_cont_forma_pagamento',
         //langContext : 'user',
