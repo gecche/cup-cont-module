@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "gecche/cup-anag-module": "v6.x-dev"
+        "gecche/cup-anag-module": "v9.x-dev"
     },
     "extra": {
         "laravel": {
