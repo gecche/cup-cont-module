@@ -1,0 +1,102 @@
+{
+    "foorm": {
+        "entities": [
+            "cup_cont_traits",
+            "cup_cont_costante_fatt_el",
+            "cup_cont_tipologia_documento",
+            "cup_cont_iva",
+            "cup_cont_forma_pagamento",
+            "cup_cont_tipologia_prestazione",
+            "cup_cont_progressivo",
+            "cup_cont_prestazione",
+            "cup_cont_documento",
+            "cup_cont_registrazione",
+            "cup_cont_documento_riga",
+            "cup_cont_documento_riga_iva"
+        ]
+    },
+    "modelconfs": {
+        "files": [
+            "CupContCostanteFattEl.js",
+            "CupContTipologiaDocumento.js",
+            "CupContIva.js",
+            "CupContFormaPagamento.js",
+            "CupContTipologiaPrestazione.js",
+            "CupContProgressivo.js",
+            "CupContPrestazione.js",
+            "CupContDocumento.js",
+            "CupContRegistrazione.js",
+            "CupContDocumentoRiga.js",
+            "CupContDocumentoRigaIva.js"
+        ]
+    },
+    "permissions": {
+        "models": [
+            "cup_cont_costante_fatt_el",
+            "cup_cont_tipologia_documento",
+            "cup_cont_iva",
+            "cup_cont_forma_pagamento",
+            "cup_cont_tipologia_prestazione",
+            "cup_cont_progressivo",
+            "cup_cont_prestazione",
+            "cup_cont_documento",
+            "cup_cont_registrazione",
+            "cup_cont_documento_riga",
+            "cup_cont_documento_riga_iva"
+        ],
+        "other_permissions": {
+            "web": [
+            ]
+        }
+    },
+    "policies": {
+        "models": {
+            "\\App\\Models\\CupContCostanteFattEl" :  "\\App\\Policies\\CupContCostanteFattElPolicy",
+            "\\App\\Models\\CupContTipologiaDocumento" : "\\App\\Policies\\CupContTipologiaDocumentoPolicy",
+            "\\App\\Models\\CupContIva" : "\\App\\Policies\\CupContIvaPolicy",
+            "\\App\\Models\\CupContFormaPagamento" : "\\App\\Policies\\CupContFormaPagamentoPolicy",
+            "\\App\\Models\\CupContTipologiaPrestazione" :  "\\App\\Policies\\CupContTipologiaPrestazionePolicy",
+            "\\App\\Models\\CupContProgressivo" :  "\\App\\Policies\\CupContProgressivoPolicy",
+            "\\App\\Models\\CupContPrestazione" :  "\\App\\Policies\\CupContPrestazionePolicy",
+            "\\App\\Models\\CupContDocumento" :  "\\App\\Policies\\CupContDocumentoPolicy",
+            "\\App\\Models\\CupContRegistrazione" :  "\\App\\Policies\\CupContRegistrazionePolicy"
+        }
+    },
+    "models": [
+        "CupContCostanteFattEl",
+        "CupContTipologiaDocumento",
+        "CupContIva",
+        "CupContFormaPagamento",
+        "CupContTipologiaPrestazione",
+        "CupContProgressivo",
+        "CupContPrestazione",
+        "CupContDocumento",
+        "CupContRegistrazione",
+        "CupContDocumentoRiga",
+        "CupContDocumentoRigaIva"
+    ],
+    "datafile-models": [
+    ],
+    "datafile-providers": [
+    ],
+    "public": [
+        "admin/ModelConfs/CupContCostanteFattEl.js",
+        "admin/ModelConfs/CupContTipologiaDocumento.js",
+        "admin/ModelConfs/CupContIva.js",
+        "admin/ModelConfs/CupContFormaPagamento.js",
+        "admin/ModelConfs/CupContTipologiaPrestazione.js",
+        "admin/ModelConfs/CupContProgressivo.js",
+        "admin/ModelConfs/CupContPrestazione.js",
+        "admin/ModelConfs/CupContDocumento.js",
+        "admin/ModelConfs/CupContRegistrazione.js",
+        "admin/ModelConfs/CupContDocumentoRiga.js",
+        "admin/ModelConfs/CupContDocumentoRigaIva.js",
+        "admin/pages/tabcontmisc.html"
+    ],
+    "components": [
+
+    ],
+    "config": [
+        "cupcont"
+    ]
+}
