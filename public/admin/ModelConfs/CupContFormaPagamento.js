@@ -18,6 +18,7 @@ var ModelCupContFormaPagamento = {
     // },
     list: {
         modelName: 'cup_cont_forma_pagamento',
+        cType: 'list',
         fields: [
             'codice',
             'nome',

@@ -21,6 +21,7 @@ var ModelCupContIva = {
     // },
     list: {
         modelName: 'cup_cont_iva',
+        cType: 'list',
         fields: [
             'codice',
             'nome',

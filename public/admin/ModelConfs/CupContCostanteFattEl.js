@@ -27,6 +27,7 @@ var ModelCupContCostanteFattEl = {
     // },
     list: {
         modelName: 'cup_cont_costante_fatt_el',
+        cType: 'list',
         fields: [
             'codice',
             'descrizione',

@@ -18,6 +18,7 @@ var ModelCupContTipologiaDocumento = {
     // },
     list: {
         modelName: 'cup_cont_tipologia_documento',
+        cType: 'list',
         fields: [
             'codice',
             'nome',
