@@ -1,5 +1,6 @@
 
 var ModelCupContDocumento = {
+	modelName : 'cup_cont_documento',
     search: {
         modelName : 'cup_cont_documento',
         fields: [

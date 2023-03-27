@@ -1,5 +1,6 @@
 
 var ModelCupContPrestazione = {
+	modelName : 'cup_cont_prestazione',
     search: {
         modelName : 'cup_cont_prestazione',
         fields: [

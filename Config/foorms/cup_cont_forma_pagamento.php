@@ -86,6 +86,45 @@ return [
     ],
     'list' => [
 
+        'allowed_actions' => [
+            'csv-export' => true,
+        ],
+
+        'actions' => [
+            'set' => [
+                'allowed_fields' => [
+//                    'soggetti_residenti',
+                ],
+            ],
+            'csv-export' => [
+                'default' => [
+                    'blacklist' => [
+//                        'password'
+                    ],
+                    'whitelist' => [
+                        'codice',
+                        'nome',
+                        'immediato',
+                        'modalita_fatt_el',
+
+                    ],
+                    'fieldsParams' => [
+//                        "istituto|comunenome" => [
+//                            'header' => 'Istituto - comune (nome)',
+//                            'item' => 'istituto|T_COMUNE_ID',
+//                        ],
+                    ],
+                    'separator' => ';',
+                    'endline' => "\n",
+                    'headers' => 'translate',
+                    'decimalFrom' => '.',
+                    'decimalTo' => false,
+                ],
+            ]
+
+        ],
+
+
         'dependencies' => [
             'search' => 'search',
         ],

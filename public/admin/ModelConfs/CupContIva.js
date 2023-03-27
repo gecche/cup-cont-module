@@ -1,4 +1,5 @@
 var ModelCupContIva = {
+    modelName: 'cup_cont_iva',
     search: {
         modelName: 'cup_cont_iva',
         //langContext : 'user',
@@ -20,6 +21,7 @@ var ModelCupContIva = {
     // },
     list: {
         modelName: 'cup_cont_iva',
+        cType: 'list',
         fields: [
             'codice',
             'nome',

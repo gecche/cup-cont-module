@@ -1,5 +1,6 @@
 
 var ModelCupContDocumentoRigaIva = {
+	modelName : 'cup_cont_documento_riga_iva',
     search: {
         modelName : 'cup_cont_documento_riga_iva',
         fields: [

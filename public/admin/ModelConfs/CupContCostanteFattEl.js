@@ -1,4 +1,5 @@
 var ModelCupContCostanteFattEl = {
+    modelName: 'cup_cont_costante_fatt_el',
     search: {
         modelName: 'cup_cont_costante_fatt_el',
         //langContext : 'user',
@@ -26,6 +27,7 @@ var ModelCupContCostanteFattEl = {
     // },
     list: {
         modelName: 'cup_cont_costante_fatt_el',
+        cType: 'list',
         fields: [
             'codice',
             'descrizione',

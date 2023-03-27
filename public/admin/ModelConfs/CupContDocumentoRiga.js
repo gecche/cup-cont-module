@@ -1,5 +1,6 @@
 
 var ModelCupContDocumentoRiga = {
+	modelName : 'cup_cont_documento_riga',
     search: {
         modelName : 'cup_cont_documento_riga',
         fields: [

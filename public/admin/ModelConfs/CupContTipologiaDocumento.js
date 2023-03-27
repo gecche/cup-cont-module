@@ -1,4 +1,5 @@
 var ModelCupContTipologiaDocumento = {
+    modelName: 'cup_cont_tipologia_documento',
     search: {
         modelName: 'cup_cont_tipologia_documento',
         //langContext : 'user',
@@ -17,6 +18,7 @@ var ModelCupContTipologiaDocumento = {
     // },
     list: {
         modelName: 'cup_cont_tipologia_documento',
+        cType: 'list',
         fields: [
             'codice',
             'nome',

@@ -90,9 +90,9 @@ class CupContServiceProvider extends ServiceProvider
      */
     public function registerFactories()
     {
-        if (! app()->environment('production') && $this->app->runningInConsole()) {
-            app(Factory::class)->load(module_path('CupCont', 'Database/factories'));
-        }
+//        if (! app()->environment('production') && $this->app->runningInConsole()) {
+//            app(Factory::class)->load(module_path('CupCont', 'Database/factories'));
+//        }
     }
 
 
@@ -113,8 +113,6 @@ class CupContServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../public/admin/ModelConfs' => public_path('admin/ModelConfs'),
             __DIR__ . '/../public/admin/pages' => public_path('admin/pages'),
-            __DIR__ . '/../public/admin/components/js' => public_path('admin/components/js'),
-            __DIR__ . '/../public/admin/components/templates' => public_path('admin/components/templates'),
         ], 'public');
 
     }
